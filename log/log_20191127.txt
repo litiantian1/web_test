@@ -1,0 +1,202 @@
+[2019-11-27 16:33:48] INFO [run: run.py, 13] =============测试开始=============
+[2019-11-27 16:33:48] DEBUG [_new_conn: connectionpool.py, 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-11-27 16:33:49] DEBUG [_make_request: connectionpool.py, 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 21
+[2019-11-27 16:33:49] INFO [log_case_info: case_log.py, 8] 测试用例：test_user_login_normal
+[2019-11-27 16:33:49] INFO [log_case_info: case_log.py, 9] url:http://115.28.108.130:5000/api/user/login/
+[2019-11-27 16:33:49] INFO [log_case_info: case_log.py, 10] 请求参数：  {"name": "张三","password":"123456"}
+[2019-11-27 16:33:49] INFO [log_case_info: case_log.py, 11] 期望结果：<h1>登录成功</h1>
+[2019-11-27 16:33:49] INFO [log_case_info: case_log.py, 12] 实际结果:<h1>登录成功</h1>
+[2019-11-27 16:33:49] DEBUG [_new_conn: connectionpool.py, 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-11-27 16:33:49] DEBUG [_make_request: connectionpool.py, 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 21
+[2019-11-27 16:33:49] INFO [log_case_info: case_log.py, 8] 测试用例：test_user_reg_normal
+[2019-11-27 16:33:49] INFO [log_case_info: case_log.py, 9] url:http://115.28.108.130:5000/api/user/login/
+[2019-11-27 16:33:49] INFO [log_case_info: case_log.py, 10] 请求参数：  {"name": "张三","password":"123456"}
+[2019-11-27 16:33:49] INFO [log_case_info: case_log.py, 11] 期望结果：<h1>登录成功</h1>
+[2019-11-27 16:33:49] INFO [log_case_info: case_log.py, 12] 实际结果:<h1>登录成功</h1>
+[2019-11-27 16:33:49] INFO [run: run.py, 22] ===========测试结束======================
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing BmpImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing BufrStubImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing CurImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing DcxImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing DdsImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing EpsImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing FitsStubImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing FliImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing FpxImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 408] Image: failed to import FpxImagePlugin: No module named olefile
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing FtexImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing GbrImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing GifImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing GribStubImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing Hdf5StubImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing IcnsImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing IcoImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing ImImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing ImtImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing IptcImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing JpegImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing Jpeg2KImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing McIdasImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing MicImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 408] Image: failed to import MicImagePlugin: No module named olefile
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing MpegImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing MpoImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing MspImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing PalmImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing PcdImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing PcxImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing PdfImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing PixarImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing PngImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing PpmImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing PsdImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing SgiImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing SpiderImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing SunImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing TgaImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing TiffImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing WebPImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing WmfImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing XbmImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing XpmImagePlugin
+[2019-11-27 17:27:33] DEBUG [init: Image.py, 405] Importing XVThumbImagePlugin
+[2019-11-27 17:28:39] INFO [<module>: config.py, 58] hello
+[2019-11-27 17:28:39] INFO [<module>: config.py, 59] test:123
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing BmpImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing BufrStubImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing CurImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing DcxImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing DdsImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing EpsImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing FitsStubImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing FliImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing FpxImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 408] Image: failed to import FpxImagePlugin: No module named olefile
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing FtexImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing GbrImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing GifImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing GribStubImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing Hdf5StubImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing IcnsImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing IcoImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing ImImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing ImtImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing IptcImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing JpegImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing Jpeg2KImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing McIdasImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing MicImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 408] Image: failed to import MicImagePlugin: No module named olefile
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing MpegImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing MpoImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing MspImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing PalmImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing PcdImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing PcxImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing PdfImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing PixarImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing PngImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing PpmImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing PsdImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing SgiImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing SpiderImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing SunImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing TgaImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing TiffImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing WebPImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing WmfImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing XbmImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing XpmImagePlugin
+[2019-11-27 17:33:35] DEBUG [init: Image.py, 405] Importing XVThumbImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing BmpImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing BufrStubImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing CurImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing DcxImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing DdsImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing EpsImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing FitsStubImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing FliImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing FpxImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 408] Image: failed to import FpxImagePlugin: No module named olefile
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing FtexImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing GbrImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing GifImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing GribStubImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing Hdf5StubImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing IcnsImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing IcoImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing ImImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing ImtImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing IptcImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing JpegImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing Jpeg2KImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing McIdasImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing MicImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 408] Image: failed to import MicImagePlugin: No module named olefile
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing MpegImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing MpoImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing MspImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing PalmImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing PcdImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing PcxImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing PdfImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing PixarImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing PngImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing PpmImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing PsdImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing SgiImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing SpiderImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing SunImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing TgaImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing TiffImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing WebPImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing WmfImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing XbmImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing XpmImagePlugin
+[2019-11-27 17:35:28] DEBUG [init: Image.py, 405] Importing XVThumbImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing BmpImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing BufrStubImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing CurImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing DcxImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing DdsImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing EpsImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing FitsStubImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing FliImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing FpxImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 408] Image: failed to import FpxImagePlugin: No module named olefile
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing FtexImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing GbrImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing GifImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing GribStubImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing Hdf5StubImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing IcnsImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing IcoImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing ImImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing ImtImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing IptcImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing JpegImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing Jpeg2KImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing McIdasImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing MicImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 408] Image: failed to import MicImagePlugin: No module named olefile
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing MpegImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing MpoImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing MspImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing PalmImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing PcdImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing PcxImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing PdfImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing PixarImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing PngImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing PpmImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing PsdImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing SgiImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing SpiderImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing SunImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing TgaImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing TiffImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing WebPImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing WmfImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing XbmImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing XpmImagePlugin
+[2019-11-27 17:40:07] DEBUG [init: Image.py, 405] Importing XVThumbImagePlugin

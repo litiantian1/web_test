@@ -1,0 +1,16 @@
+[2019-12-11 17:20:54] INFO [run: run.py, 13] =============测试开始=============
+[2019-12-11 17:20:54] DEBUG [_new_conn: connectionpool.py, 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-12-11 17:20:55] DEBUG [_make_request: connectionpool.py, 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 42
+[2019-12-11 17:20:55] INFO [log_case_info: case_log.py, 8] 测试用例：test_user_login_normal
+[2019-12-11 17:20:55] INFO [log_case_info: case_log.py, 9] url:http://115.28.108.130:5000/api/user/login/
+[2019-12-11 17:20:55] INFO [log_case_info: case_log.py, 10] 请求参数：  {"name": "张三","password":"123456"}
+[2019-12-11 17:20:55] INFO [log_case_info: case_log.py, 11] 期望结果：<h1>登录成功</h1>
+[2019-12-11 17:20:55] INFO [log_case_info: case_log.py, 12] 实际结果:<h1>失败，用户名或密码错误</h1>
+[2019-12-11 17:20:55] DEBUG [_new_conn: connectionpool.py, 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-12-11 17:20:55] DEBUG [_make_request: connectionpool.py, 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 42
+[2019-12-11 17:20:55] INFO [log_case_info: case_log.py, 8] 测试用例：test_user_reg_normal
+[2019-12-11 17:20:55] INFO [log_case_info: case_log.py, 9] url:http://115.28.108.130:5000/api/user/login/
+[2019-12-11 17:20:55] INFO [log_case_info: case_log.py, 10] 请求参数：  {"name": "张三","password":"123456"}
+[2019-12-11 17:20:55] INFO [log_case_info: case_log.py, 11] 期望结果：<h1>登录成功</h1>
+[2019-12-11 17:20:55] INFO [log_case_info: case_log.py, 12] 实际结果:<h1>失败，用户名或密码错误</h1>
+[2019-12-11 17:20:55] INFO [run: run.py, 22] ===========测试结束======================
