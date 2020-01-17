@@ -1,22 +1,29 @@
 # -*-coding:utf-8 -*-
 #!/usr/bin/python
 #重庆和教育-家校共育
-from config.config import *
 from selenium import webdriver
 import baiduORC
-from lib.case_log import *
 import base64
-from lib.case_log import *
 from lib.emil_test2 import *
+from selenium.webdriver.firefox.options import Options
+
 
 Url='http://www.cqhejiaoyu.com/'
-#driver=webdriver.Chrome()
-option=webdriver.FirefoxProfile()
-option.set_preference("plugin.state.flash",2)
-driver=webdriver.Firefox(option)
+
+# 设置无界面浏览器
+options = Options()
+options.add_argument('--headless')
+
+#设置允许flash
+option = webdriver.FirefoxProfile()
+option.set_preference("plugin.state.flash", 2)
+
+# 打开浏览器
+driver = webdriver.Firefox(option,options=options)
 time.sleep(2)
 driver.maximize_window()
-driver.get(Url)
+driver.get(url=Url)
+
 prj_path = os.path.dirname(os.path.abspath(__file__))
 img_path = os.path.join(prj_path, 'img')  # 图片目录
 time.sleep(2)
@@ -113,6 +120,8 @@ def School_message():
     time.sleep(4)
 def School_notice():
     #通知
+    driver.maximize_window()
+    time.sleep(2)
     driver.find_element_by_xpath(".//*[@id='notice']").click()
     time.sleep(4)
     #选择年级
@@ -257,6 +266,13 @@ if __name__=='__main__':
         School_notice()
         School_homework()
         School_Score()
+        with open('report_{}.html'.format(today),'wr') as f:
+            f.write(now)
+            f.write('pass')
+            print now
+        #发送邮件
+        send_email(report_file)
+        print 'pass 邮件发送成功'
         #School_Communication()
     except EOFError:
         print EOFError
@@ -265,7 +281,10 @@ if __name__=='__main__':
         #生成测试报告-错误信息
         with open('report_{}.html'.format(today),'wr') as f:
             f.write(EOFError)
+            print now
         #发送邮件
         send_email(report_file)
+        print EOFError
+        print 'error 邮件发送成功'
     finally:
         driver.quit()

@@ -1,12 +1,24 @@
 # coding=utf-8
-import time
+from selenium.webdriver import Firefox
+from selenium.webdriver.firefox.options import Options
 from cqhejiaoyu_web import *
-
+from pyvirtualdisplay import Display
+from selenium import webdriver
 Url = 'http://www.cqhejiaoyu.com/'
 
-option = webdriver.FirefoxProfile()
-option.set_preference("plugin.state.flash", 2)
-driver = webdriver.Firefox(option)
+# 设置为无界面浏览器
+options = Options()
+options.add_argument('--headless')
+
+# 打开浏览器
+#option = webdriver.Firefox(options=options)
+# 现在firefox会运行在一个虚拟屏幕中
+# 你看不到它
+#option = webdriver.FirefoxProfile()
+#option.set_preference("plugin.state.flash", 2)
+#option.add_extension('--headless--')
+#driver = webdriver.Firefox(option)
+driver = webdriver.Firefox(options=options)
 time.sleep(2)
 driver.maximize_window()
 driver.get(Url)
