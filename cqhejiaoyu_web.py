@@ -266,7 +266,8 @@ if __name__=='__main__':
         School_notice()
         School_homework()
         School_Score()
-        with open('report_{}.html'.format(today),'wr') as f:
+        print '拨测执行完成'
+        with open('report_{}.html'.format(today),'w') as f:
             f.write(now)
             f.write('pass')
             print now
@@ -279,7 +280,7 @@ if __name__=='__main__':
         #屏幕截图
         driver.save_screenshot('screenshot.png')
         #生成测试报告-错误信息
-        with open('report_{}.html'.format(today),'wr') as f:
+        with open('report_{}.html'.format(today),'w') as f:
             f.write(EOFError)
             print now
         #发送邮件
