@@ -272,7 +272,9 @@ if __name__=='__main__':
             f.write('pass')
             print now
         #发送邮件
-        send_email(report_file)
+        now_data=now
+        print 'report_'+now_data+'.html'
+        send_email('report_'+now_data+'.html')
         print 'pass 邮件发送成功'
         #School_Communication()
     except EOFError:
@@ -284,7 +286,9 @@ if __name__=='__main__':
             f.write(EOFError)
             print now
         #发送邮件
-        send_email(report_file)
+        error_now=now
+        print 'report_'+error_now+'.html'
+        send_email('report_'+error_now+'.html')
         print EOFError
         print 'error 邮件发送成功'
     finally:
