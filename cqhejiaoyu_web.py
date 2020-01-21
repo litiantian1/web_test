@@ -267,7 +267,7 @@ if __name__=='__main__':
         School_homework()
         School_Score()
         print '拨测执行完成'
-        with open('report_{}.html'.format(today),'w') as f:
+        with open('report_{}.html'.format(now),'w') as f:
             f.write(now)
             f.write('pass')
             print now
@@ -275,14 +275,14 @@ if __name__=='__main__':
         now_data=now
         print 'report_'+now_data+'.html'
         send_email('report_'+now_data+'.html')
-        print 'pass 邮件发送成功'
+        #print 'pass 邮件发送成功'
         #School_Communication()
     except EOFError:
         print EOFError
         #屏幕截图
         driver.save_screenshot('screenshot.png')
         #生成测试报告-错误信息
-        with open('report_{}.html'.format(today),'w') as f:
+        with open('report_{}.html'.format(now),'w') as f:
             f.write(EOFError)
             print now
         #发送邮件

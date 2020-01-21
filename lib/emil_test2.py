@@ -17,7 +17,7 @@ def send_email(report_file):
     # 2.组装Email头（发件人、收件人、主题)
     msg['To'] = received  # 收件人
     msg['From'] =sender  # 发件人
-    msg['Subject'] = Header('web自动拨测出现error', 'utf-8')  # 中文邮件主题
+    msg['Subject'] = Header('web自动拨测结果', 'utf-8')  # 中文邮件主题
 
     # 3.构建附件1，传送当前目录下的test.txt文件
     att1 = MIMEImage(open('screen.png', 'rb').read())
@@ -34,6 +34,7 @@ def send_email(report_file):
         logging.info("邮件发送成功2019！")
     except Exception as e:
         print '邮件发送失败'
+        print str(e)
         logging.error(str(e))
     finally:
          smtp.quit()
@@ -41,7 +42,7 @@ def send_email(report_file):
 if __name__=='__main__':
     #driver.save_screenshot('screenshot.png')
     # 生成测试报告-错误信息
-    with open('report_{}.html'.format(today), 'w') as f:
-        f.write('test')
+   # with open('report_{}.html'.format(today), 'w') as f:
+       # f.write('test')
     # 发送邮件
-    send_email(report_file)
+    send_email('report_20200121_100200.html')
