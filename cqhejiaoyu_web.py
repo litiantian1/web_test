@@ -44,7 +44,7 @@ def web_login():
     word =baiduORC.RecogniseForm(access_token=token, image=image1)
     logging.info("识别结果")
     print("识别结果")
-    print(word)
+    print(word.encode('utf-8'))
     if len(word)==6:
     #请输入验证码
         time.sleep(2)
