@@ -4,7 +4,7 @@ import requests
 import json
 import sys
 sys.path.append('../..') # 统一将包的搜索路径提升至项目根目录下
-from config.config import *
+from config.config1 import *
 import unittest
 from lib.read_execl import *
 from lib.case_log import log_case_info

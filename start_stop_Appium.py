@@ -14,15 +14,15 @@ class Appium(object):
         try:
             if self.port_is_free(host, port):
                 cmd = 'start/b appium -a ' + host + ' -p ' + port + ' -U' + devices_uid
-                print cmd
+                print (cmd)
                 # p= subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE) #stdout=PIPE, stderr=PIPE)
                 p = subprocess.Popen(cmd, shell=True, stdout=open('E:/logs.log', 'w'), stderr=subprocess.STDOUT)
-                print p
+                print (p)
                 appium_server_url = 'http://' + host + ':' + str(port) + '/wd/hub'
-                print appium_server_url
+                print (appium_server_url)
             else:
-                print "port:%d is used!" % port
-        except Exception, msg:
+                print ("port:%d is used!" % port)
+        except Exception as msg:
             errormsg = str(msg)
         return appium_server_url, errormsg
 
@@ -36,20 +36,20 @@ class Appium(object):
         cmd = 'stopAppiumServer.BAT %s' % get_port
         # print cmd
         p = os.popen(cmd)
-        print p.read()
+        print (p.read())
 
     def ABD(self, X, Y):
             cmd = 'start/b adb shell input tap ' + str(X) + " " + str(Y)
             p = subprocess.Popen(cmd, shell=True, stderr=subprocess.STDOUT)
-            print cmd
+            print (cmd)
     def ABD_Move(self, X, Y, Z, G, S):
             cmd = "start/b adb shell input swipe {0} {1} {2} {3} {4}".format(str(X), str(Y), str(Z), str(G), str(S))
             p = subprocess.Popen(cmd, shell=True, stderr=subprocess.STDOUT)
-            print cmd
+            print (cmd)
     def ABDKey(self, X):
             cmd = 'start/b adb shell input keyevent ' + str(X)
             p = subprocess.Popen(cmd, shell=True, stderr=subprocess.STDOUT)
-            print cmd
+            print (cmd)
 
 '''if __name__=='__main__':
    appium1=Appium()

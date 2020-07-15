@@ -4,7 +4,7 @@ import unittest
 import sys
 '''引入BsseCase简化后的登陆用例'''
 sys.path.append('../..') # 统一将包的搜索路径提升至项目根目录下
-from config.config import *
+from config.config1 import *
 class TestUserReg(unittest.TestCase):
     def test_user_reg_normal(self):
         """level1:正常登陆"""

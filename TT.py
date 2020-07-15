@@ -3,17 +3,19 @@
 
 # coding=utf-8
 import os
-import requests
+import reload
+
+import request
 from selenium import webdriver
 import time
 import start_stop_Appium
 import sys
 import pymysql
 
-import requests
+import request
 from selenium import webdriver
 import time
-requests.adapters.DEFAULT_RETRIES = 10
+request.adapters.DEFAULT_RETRIES = 10
 reload(sys)
 sys.setdefaultencoding('utf8')
 appium1 = start_stop_Appium.Appium()
@@ -23,12 +25,12 @@ time.sleep(8)
 
 def get_phone():
     url="http://47.106.141.142:9180/service.asmx/GetHM2Str?token=E76047593A0DCEA45EB6AB7D8D99207C&xmid=13673&sl=1&lx=0&a1=&a2=&pk=&ks=0&rj="
-    r = requests.get(url)
+    r = request.GET(url)
     result = r.content
     return result
 def remove_code(phone):
     url = "http://47.106.141.142:9180/service.asmx/sfHmStr?token=E76047593A0DCEA45EB6AB7D8D99207C&hm="+phone
-    r = requests.get(url)
+    r = request.GET(url)
     result = r.content
     return result
 def isElementExist(xpath):
@@ -57,7 +59,7 @@ def handle():
     if result[0] == 'hm':
         phone = result[1]
     else:
-        print 'error1'
+        print ('error1')
         return 0
     driver.find_element_by_xpath("//android.widget.EditText[@resource-id='com.gt.app.gtecard:id/edt_account_fln']").send_keys(phone)
     driver.find_element_by_xpath("//android.widget.EditText[@resource-id='com.gt.app.gtecard:id/edt_password_fln']").send_keys('123456')
@@ -68,11 +70,11 @@ def handle():
         text = driver.find_element_by_xpath("//android.widget.TextView[@resource-id='com.gt.app.gtecard:id/dialog_content']").text
         driver.find_element_by_xpath("//android.widget.TextView[@resource-id='com.gt.app.gtecard:id/dialog_alert']").click()
         if text == "账号或密码错误":
-            print phone
+            print (phone)
         else:
-            print 'error1'
+            print ('error1')
     else:
-       print 'error2'
+       print ('error2')
     remove_code(phone)
 time.sleep(5)
 while (1):

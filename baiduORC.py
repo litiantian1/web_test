@@ -27,7 +27,7 @@ def GetAccessToken(ak, sk):
    # SK="h6RNF7btM6Q03ZP9ukXWc8461XmZzkTd"
     host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=%s&client_secret=%s'%(ak,sk)
     headers = {'Content-Type': 'application/json; charset=UTF-8'}
-    rs=requests.get(url=host)
+    rs=requests.get(host)
     #response = rs.urlopen(req)
     if (rs.status_code== 200):
         data = json.loads(rs.content)
@@ -60,7 +60,7 @@ def RecogniseForm(access_token, image, templateSign=None, classifierId=None):
         #response = request.urlopen(req)
         if (rs.status_code== 200):
             data = json.loads(rs.content)
-            print data
+            print (data)
             results = data['words_result']
             if len(results)!=0:
                 word = results[0]['words']
@@ -139,11 +139,11 @@ if __name__=='__main__':
     #for img in list:
     prj_path = os.path.dirname(os.path.abspath(__file__))
     img_path = os.path.join(prj_path, 'img') # 图片目录
-    a=img_path+"/"+'11.png'
-    image1 = Recognise(img_path+"/"+'11.png')
+    a=img_path+"/"+'code.png'
+    image1 = Recognise(img_path+"/"+'code.png')
     #print image1
     AK = "N2Rzea28gzaqQ0xG4bmwR6xO"
     SK = "h6RNF7btM6Q03ZP9ukXWc8461XmZzkTd"
     token = GetAccessToken(AK, SK)
     word = RecogniseForm(access_token=token, image=image1)
-    print word
+    print(word)

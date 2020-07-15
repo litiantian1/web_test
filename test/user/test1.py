@@ -3,7 +3,7 @@ import unittest
 import sys
 sys.path.append("../..")
 import os
-from config.config import *
+from config.config1 import *
 def collect(test): #由于使用discover()组装的TestSuite是按文件夹目录多级嵌套的，我们把所有的用例取出来，放在一个无嵌套的TesetSunit中方便使用
     suit=unittest.TestSuite()
     def _collect(tests): #递归,如果下级元素还是TestSuite则继续往下找

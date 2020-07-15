@@ -1,7 +1,7 @@
 # coding=utf-8
 import xlrd
 import requests
-from config.config import *
+from config.config1 import *
 import os
 '''封装读取execl文件'''
 '''根据文件名、sheet名、用例名case_name获取某条用例的数据'''

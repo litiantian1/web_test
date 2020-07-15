@@ -1,7 +1,7 @@
 # coding=utf-8
 from selenium.webdriver import Firefox
 from selenium.webdriver.firefox.options import Options
-from cqhejiaoyu_web import *
+from cqhejiaoyu_web02 import *
 from pyvirtualdisplay import Display
 from selenium import webdriver
 Url = 'http://www.cqhejiaoyu.com/'
