@@ -5,13 +5,12 @@
 import base64
 import os
 import time
-
 from selenium import webdriver
 
 import baiduORC
 import lib.emil_test2
 import config.config1
-
+from pyvirtualdisplay import Display
 
 Url='http://www.cqhejiaoyu.com/'
 
@@ -20,11 +19,12 @@ Url='http://www.cqhejiaoyu.com/'
 #options.add_argument('--headless')
 
 #设置允许flash
-option = webdriver.FirefoxProfile()
-option.set_preference("plugin.state.flash", 2)
-
+#option = webdriver.FirefoxProfile()
+#ption.set_preference("plugin.state.flash", 2)
+display = Display(visible=0, size=(1080,900))
+display.start()
 # 打开浏览器
-driver = webdriver.Firefox(option)
+driver = webdriver.Chrome(option)
 time.sleep(2)
 driver.maximize_window()
 driver.get(url=Url)

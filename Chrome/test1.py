@@ -2,10 +2,13 @@
 # !user/bin/python
 #测试Selenium2(WebDriver)_如何判断WebElement元素对象是否存在
 from selenium import webdriver
+from pyvirtualdisplay import Display
 import time
 
+display=Display(visible=0,size=(1080,900))
+display.start() #打开虚拟界面
 Url='https://www.baidu.com/'
-driver=webdriver.Firefox()
+driver=webdriver.Chrome()
 driver.get(Url)
 try:
     driver.find_element_by_xpath(".//*[@id='kw']").send_keys(u'月季')
